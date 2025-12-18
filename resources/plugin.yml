@@ -1,0 +1,19 @@
+name: ChainPro
+version: '${project.version}'
+main: org.awaioi.chainpro.ChainPro
+api-version: '1.21'
+softdepend: [WorldGuard, GriefPrevention, Residence]
+
+commands:
+  chainpro:
+    description: Chain mining / tree mining
+    aliases: [chainmine, cm]
+    usage: /<command> <toggle|reload|status>
+
+permissions:
+  chainmine.use:
+    default: true
+  chainmine.reload:
+    default: op
+  chainmine.admin:
+    default: op
